@@ -26,8 +26,8 @@ for i in *.WAV; do mv {,G001_}$i; done # G001 se remplaza con el nombre correspo
 
 ### 1.2. Extraer metadatos
 Se automatizó la extracción de metadatos fundamentales de cada archivo de audio usando R.
-El script [audio_metadata_utilities.R](preprocessing/audio_metadata_utilities.R) contiene las funciones
-necesarias y [read_audio_metadata.R](preprocessing/read_audio_metadata.R) presenta el paso a paso para
+El script [audio_metadata_utilities.R](aguas_altas/preprocessing/audio_metadata_utilities.R) contiene las funciones
+necesarias y [read_audio_metadata.R](aguas_altas/preprocessing/read_audio_metadata.R) presenta el paso a paso para
 automatizar el proceso en todas las grabaciones. **Los archivos deben estar organizados 
 teniendo un durectorio por cada unidad de muestreo**.
 
@@ -38,14 +38,14 @@ tener una visión de conjunto y realizar una inspección manual. Se tomó una mu
 funcionando correctamente y se identificaron los principales patrones en los datos.
 
 Se usaron los scripts de Python:
-- [sample_acoustic_monitoring.py](preprocessing/sample_acoustic_monitoring.py)
-- [audio_to_spectro_image.py](preprocessing/audio_to_spectro_image.py)
+- [sample_acoustic_monitoring.py](aguas_altas/preprocessing/sample_acoustic_monitoring.py)
+- [audio_to_spectro_image.py](aguas_altas/preprocessing/audio_to_spectro_image.py)
 
 Se encontraron grabadoras con un desfase en sus archivos. La hora se corrigió en el 
-nombre del archivo con el script [rename_files_time_delay.py](preprocessing/rename_files_time_delay.py).
+nombre del archivo con el script [rename_files_time_delay.py](aguas_altas/preprocessing/rename_files_time_delay.py).
 
 ## 2. Caracterización de comunidad acústica
-Para evidenciar los principales patrones de diversidad de la comunidad acústica, evaluamos características en tiempo y frecuencia a través de la huella acústica y calculamos múltiples índices acústicos. La huella acústica se calculó usando el paquete Seewave (v2.1.6) de R (v3.6.1) y los índices acústicos fueron calculados usando el paquete scikit-maad (v1.3) en Python (v3.7). Estos scripts se encuentran en la carpeta [acoustic_community_characterization](acoustic_community_characterization).
+Para evidenciar los principales patrones de diversidad de la comunidad acústica, evaluamos características en tiempo y frecuencia a través de la huella acústica y calculamos múltiples índices acústicos. La huella acústica se calculó usando el paquete Seewave (v2.1.6) de R (v3.6.1) y los índices acústicos fueron calculados usando el paquete scikit-maad (v1.3) en Python (v3.7). Estos scripts se encuentran en la carpeta [acoustic_community_characterization](aguas_altas/acoustic_community_characterization).
 
 ## Autores y contacto
 Estos análisis fueron desarrollados por Juan Sebastián Ulloa (julloa@humboldt.org.co), investigador del PRograma de Evaluación y Monitoreo de la Biodiversidad del Intituto Humboldt.
