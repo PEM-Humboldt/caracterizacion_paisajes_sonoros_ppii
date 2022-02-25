@@ -68,3 +68,7 @@ ax[0].set_xlabel('Indices acústicos')
 ax[0].grid(color='w', axis='y', linewidth=0.5)
 sns.heatmap(plt_data, cmap='viridis', linewidths=.5, ax=ax[1])
 fig.tight_layout()
+
+#%% Save classification data
+df_save = pd.DataFrame({'y' : y, 'y_pred': y_pred, 'sensor_name': df_indices.sensor_name})
+df_save.to_csv('./clf_predictions/rf_prediction_results.csv', index=False)

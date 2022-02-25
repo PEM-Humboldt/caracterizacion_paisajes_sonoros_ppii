@@ -33,10 +33,16 @@ plot(plt_data[c('MDS1', 'MDS2')], col='gray', pch=16, bty='n',xlab='NMDS 1', yla
 abline(v=0,col='gray',lty=2);abline(h=0,col='gray',lty=2)
 s.class(plt_data[c('MDS1', 'MDS2')], fac=factor(plt_data$Cobertura), col = colors, add.plot = T)
 
+# Save NMDS data
+xdata = data.frame(NMDS1=tf_bins_nmds$points[,1], NMDS2=tf_bins_nmds$points[,2], 
+                   Cobertura=factor(plt_data$Cobertura))
+xdata['sensor_name'] = substr(row.names(xdata), 1, 4)
+write.csv(xdata, './nmds_data/nmds_data.csv', row.names=FALSE)
+
 # Use a non parametric test to evaluate significance of the groups
-xdata = data.frame(x=tf_bins_nmds$points[,1], y=tf_bins_nmds$points[,2], region=factor(plt_data$Cobertura))
-dist = vegdist(tf_bins, 'bray')
-adonis(dist~xdata$region, permutations = 1000)
+#dist = vegdist(tf_bins, 'bray')  # using 3072 dimensions
+dist = vegdist(xdata[c('NMDS1', 'NMDS2')], 'euclidean') # using 2D data
+adonis(dist~xdata$cobertura, permutations = 1000)
 
 ## -- Find Indicator Bins -- ##
 # combine data frames with environmental data
@@ -64,3 +70,20 @@ fidg = data.frame(group=gr, indval=iv, pvalue=pv, freq=fr)
 fidg = fidg[order(fidg$group, -fidg$indval),]
 fidg['tf_bin'] = row.names(fidg)
 write.csv(fidg, './indicator_species_data/indval.csv', row.names = FALSE)
+
+# Compute measures of mean dispersion for each cover
+# NOTE: Check python script to compute values for each observation and evaluate statistically.
+dispersion = data.frame('Cobertura' = unique(xdata$Cobertura), 'value'=vector(length=6))
+for(cobertura in unique(xdata$Cobertura)){
+  df_cover = xdata[xdata$Cobertura==cobertura,]
+  centroid = data.frame('NMDS1'= mean(df_cover$NMDS1), 
+                        'NMDS2'= mean(df_cover$NMDS2),
+                        'Cobertura' = 'centroid',
+                        'sensor_name'='centroid',
+                        row.names='centroid')
+  df_cover = rbind(df_cover, centroid)
+  dist = vegdist(df_cover[c('NMDS1', 'NMDS2')], 'euclidean')
+  dist = as.matrix(dist)
+  dispersion_cover = mean(dist[nrow(dist),1:nrow(dist)-1])
+  dispersion[dispersion$Cobertura==cobertura, 'value'] = dispersion_cover
+  }
