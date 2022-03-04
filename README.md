@@ -59,7 +59,7 @@ Huella acústica por cobertura:
 ![Huella acústica por cobertura](aguas_altas/acoustic_community_characterization/graphical_soundscapes/figures/mean_graphical_soundscapes_per_cover.png)
 
 Indices acústicos por cobertura:
-![Indices acústicos por cobertura](aguas_altas/acoustic_community_characterization/graphical_soundscapes/figures/dial_acoustic_indices_no_rain.png)
+![Indices acústicos por cobertura](aguas_altas/acoustic_community_characterization/acoustic_indices/figures/dial_acoustic_indices_no_rain.png)
 
 
 ## Autores y contacto
