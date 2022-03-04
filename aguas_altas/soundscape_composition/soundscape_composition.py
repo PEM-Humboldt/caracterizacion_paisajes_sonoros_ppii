@@ -98,7 +98,9 @@ plt_data.reset_index(inplace=True)
 fig, ax = plt.subplots(figsize=(8,5))
 for idx, row in plt_data.iterrows():
     ax.scatter(row.Prop, idx, color=row.color)
-ax.hlines(plt_data['Tipo 2'], xmin=0, xmax=plt_data['Prop'], colors=plt_colors)
+    ax.text(x=row.Prop+2, y=idx-0.15, s=np.round(row.Prop,1), color=row.color)
+
+ax.hlines(plt_data['Tipo 2'], xmin=0, xmax=plt_data['Prop'], colors=plt_data.color)
 ax.set_xlabel('Proporción (%)')
 sns.despine(ax=ax, trim=True)
 plt.grid(linestyle=':', axis='x')

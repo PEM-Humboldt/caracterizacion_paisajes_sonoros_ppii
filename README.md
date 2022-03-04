@@ -44,6 +44,9 @@ Se usaron los scripts de Python:
 Se encontraron grabadoras con un desfase en sus archivos. La hora se corrigió en el 
 nombre del archivo con el script [rename_files_time_delay.py](aguas_altas/preprocessing/rename_files_time_delay.py).
 
+![Esfuerzo de muestreo por cobertura](aguas_altas/preprocessing/figures/esfuerzo_muestreo_todas.png)
+![Espectrograma de 24 horas en punto de muestreo](aguas_altas/preprocessing/figures/G001_palma.png)
+
 ## 2. Caracterización de comunidad acústica
 Para evidenciar los principales patrones de diversidad de la comunidad acústica, evaluamos características en tiempo y frecuencia a través de la huella acústica y calculamos múltiples índices acústicos. La huella acústica se calculó usando el paquete Seewave (v2.1.6) de R (v3.6.1) y los índices acústicos fueron calculados usando el paquete scikit-maad (v1.3) en Python (v3.7). Estos scripts se encuentran en la carpeta [acoustic_community_characterization](aguas_altas/acoustic_community_characterization).
 
