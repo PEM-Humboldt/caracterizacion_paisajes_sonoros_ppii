@@ -44,7 +44,11 @@ Se usaron los scripts de Python:
 Se encontraron grabadoras con un desfase en sus archivos. La hora se corrigió en el 
 nombre del archivo con el script [rename_files_time_delay.py](aguas_altas/preprocessing/rename_files_time_delay.py).
 
-![Esfuerzo de muestreo por cobertura](aguas_altas/preprocessing/figures/esfuerzo_muestreo_todas.png)
+#### Ejemplos ilustrativos
+Esfuerzo de muestreo en Kalé por cobertura:
+![Esfuerzo de muestreo por cobertura](aguas_altas/preprocessing/figures/esfuerzo_muestreo_kale.png)
+
+Espectrograma de 24 horas en punto de muestreo:
 ![Espectrograma de 24 horas en punto de muestreo](aguas_altas/preprocessing/figures/G001_palma.png)
 
 ## 2. Caracterización de comunidad acústica
