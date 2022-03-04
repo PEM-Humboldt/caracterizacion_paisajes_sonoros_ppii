@@ -54,8 +54,16 @@ Espectrograma de 24 horas en punto de muestreo:
 ## 2. Caracterización de comunidad acústica
 Para evidenciar los principales patrones de diversidad de la comunidad acústica, evaluamos características en tiempo y frecuencia a través de la huella acústica y calculamos múltiples índices acústicos. La huella acústica se calculó usando el paquete Seewave (v2.1.6) de R (v3.6.1) y los índices acústicos fueron calculados usando el paquete scikit-maad (v1.3) en Python (v3.7). Estos scripts se encuentran en la carpeta [acoustic_community_characterization](aguas_altas/acoustic_community_characterization).
 
+#### Ejemplos ilustrativos
+Huella acústica por cobertura:
+![Huella acústica por cobertura](aguas_altas/acoustic_community_characterization/graphical_soundscapes/figures/mean_graphical_soundscapes_per_cover.png)
+
+Indices acústicos por cobertura:
+![Indices acústicos por cobertura](aguas_altas/acoustic_community_characterization/graphical_soundscapes/figures/dial_acoustic_indices_no_rain.png)
+
+
 ## Autores y contacto
-Estos análisis fueron desarrollados por Juan Sebastián Ulloa (julloa@humboldt.org.co), investigador del PRograma de Evaluación y Monitoreo de la Biodiversidad del Intituto Humboldt.
+Estos análisis fueron desarrollados por Juan Sebastián Ulloa (julloa@humboldt.org.co), investigador del Programa de Evaluación y Monitoreo de la Biodiversidad del Intituto Humboldt.
 
 ## Licencia
 Este desarrollo es de fuente libre y está acompañado de una licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
