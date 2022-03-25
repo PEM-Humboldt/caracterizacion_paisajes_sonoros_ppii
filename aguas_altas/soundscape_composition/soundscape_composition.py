@@ -106,6 +106,10 @@ sns.despine(ax=ax, trim=True)
 plt.grid(linestyle=':', axis='x')
 fig.set_tight_layout('tight')
 
+#%% Save dataframes for posterior analysis
+df_prop.to_csv('./dataframes/presence_absence_global_components.csv')
+df_prop_id.to_csv('./dataframes/presence_absence_detailed_components.csv')
+
 #%% Get proportion of sound types for each site and each land cover
 df_env = pd.read_csv('../env_data/ANH_to_GXX.csv')
 df_env = df_env[['sensor_name', 'Cobertura']]
