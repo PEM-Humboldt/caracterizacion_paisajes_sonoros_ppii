@@ -107,6 +107,7 @@ plt.grid(linestyle=':', axis='x')
 fig.set_tight_layout('tight')
 
 #%% Save dataframes for posterior analysis
+df.to_csv('../manual_annotations/annot_random_sampling_consolidado.csv')
 df_prop.to_csv('./dataframes/presence_absence_global_components.csv')
 df_prop_id.to_csv('./dataframes/presence_absence_detailed_components.csv')
 
