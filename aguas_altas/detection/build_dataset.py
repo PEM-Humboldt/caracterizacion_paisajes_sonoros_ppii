@@ -50,22 +50,4 @@ df.max_t = df.min_t + df.length
 df.to_csv(path_save, index=False)
 
 
-#%% 
-"""
-Load audio, resample, trim and write to disk
 
-"""
-path_audio = '/Volumes/PAPAYA/ANH/'
-rois_fmt = df
-
-for idx_row, roi_fmt in rois_fmt.iterrows():
-    print(idx_row+1, '/', len(rois_fmt))
-    full_path_audio = find_file(roi_fmt.fname, path_audio)[0]
-    s, fs = sound.load(full_path_audio)
-    s_trim = sound.trim(s, fs, roi_fmt.min_t, roi_fmt.max_t, pad=True)
-    fname_save = os.path.join(path_save, roi_fmt.label+'_'+str(idx_row).zfill(3)) 
-    sound.write(fname_save+'.wav', fs=fs, data=s_trim, bit_depth=16)
-
-# save data frame
-rois_fmt['fname_trim'] = rois_fmt.label + '_' + rois_fmt.index.astype(str).str.zfill(3)
-#rois_fmt.to_csv(path_save+'rois_details.csv', index=False)
