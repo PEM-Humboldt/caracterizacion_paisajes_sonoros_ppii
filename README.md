@@ -31,17 +31,19 @@ necesarias y [read_audio_metadata.R](aguas_altas/preprocessing/read_audio_metada
 automatizar el proceso en todas las grabaciones. **Los archivos deben estar organizados 
 teniendo un durectorio por cada unidad de muestreo**.
 
-### 1.3. Visión de conjunto e inspección manual
-Para asegurarnos de tener información válida en etapas siguentes del análisis es improtante
-tener una visión de conjunto y realizar una inspección manual. Se tomó una muestra de 
-5 segundos por cada grabación durante 5 días. Así se verificó que los micrófonos estaban
-funcionando correctamente y se identificaron los principales patrones en los datos.
+### 1.3. Depuración de datos
+Para asegurarnos de tener información válida en etapas siguentes del análisis es importante revisar y depurar los
+datos de forma manual. Para tener una visión de conjunto de los datos, se tomó una muestra de 
+5 segundos por cada grabación durante 5 días. Así se realizó una evaluación exploratorio de los datos y se verificó:
+- Correcto funcionamiento de los micrófonos: se pueden presentar grabaciones con poco o nula actividad por fallos en membrana del micrófono.
+- Correcto funcionamiento de grabadoras: verificar que fechas y horarios coinciden con configuración 1 min cada 29 min.
+- Configuraciónd de la hora: La hora puede estar desfasada, verificar que coro de amanecer y atardecer coincidan con 6am y 6pm.
 
 Se usaron los scripts de Python:
 - [sample_acoustic_monitoring.py](aguas_altas/preprocessing/sample_acoustic_monitoring.py)
 - [audio_to_spectro_image.py](aguas_altas/preprocessing/audio_to_spectro_image.py)
 
-Se encontraron grabadoras con un desfase en sus archivos. La hora se corrigió en el 
+Cuando se encontraron grabadoras con un desfase en sus archivos, la hora se corrigió en el 
 nombre del archivo con el script [rename_files_time_delay.py](aguas_altas/preprocessing/rename_files_time_delay.py).
 
 #### Ejemplos ilustrativos
