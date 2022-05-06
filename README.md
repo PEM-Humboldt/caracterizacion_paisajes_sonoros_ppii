@@ -13,6 +13,9 @@ A continuación se detallan las librerías usadas en cada uno de estos lenguajes
 ## Archivos requeridos
 Las grabaciones pasivas objeto de este estudio están almacenadas en la Colección de Sonidos Ambientales del Instituto Humboldt.
 
+## Flujo de análisis global
+![Flujo análisis global](figures/flujo_analisis_pam_anh.jpeg)
+
 ## 1. Preprocesamiento
 
 ### 1.1. Agragar prefijos a los nombres de los archivos
