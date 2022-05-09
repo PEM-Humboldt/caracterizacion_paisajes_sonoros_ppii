@@ -34,7 +34,7 @@ def roi2windowed(wl, roi):
     roi_len = (roi.max_t - roi.min_t)
     
     if roi_len < wl:
-        # region shorter than window length
+        # region shorter than window length, set window at the center of roi
         roi_median = roi.min_t + roi_len/2
         roi.loc['min_t'] = roi_median - wl/2
         roi.loc['max_t'] = roi_median + wl/2
