@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Add prefix to Audacity audio files
+Add prefix to audio files colected with Audiomoths. These files don't have any prefix and
+can be mixed.
 
-@author: jsulloa
 """
 
 
@@ -12,7 +12,7 @@ import glob
 
 #%%
 
-flist = glob.glob('/Volumes/lacie_exfat/G001/*.WAV')
+flist = glob.glob('./anh_aguas_bajas/**/*.WAV')
 
 #%% Double check that names do not have prefix
 
