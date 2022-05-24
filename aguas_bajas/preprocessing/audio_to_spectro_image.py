@@ -14,7 +14,7 @@ The pipeline includes:
 import numpy as np
 import pickle
 from maad import sound, util
-from personal_utilities import listdir_pattern
+from preprocessing_utils import listdir_pattern
 from skimage import io
 from skimage.filters import gaussian
 
@@ -78,3 +78,7 @@ for fname_open in flist_dir:
         else:
             pass
             
+#%% Remove pkl files to free disk usage
+for fname_open in flist_dir:
+    print('Removing file:', fname_open)
+    os.remove(fpath+fname_open)

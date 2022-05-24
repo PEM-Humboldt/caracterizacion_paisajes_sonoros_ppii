@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Sample data from acoustic monitoring taking a sample of few seconds from each file.
-The data is organized into a dictionary.
+The data is organized into a dictionary and saved as pickle format.
 
 @author: jsulloa
 """
@@ -10,7 +10,7 @@ The data is organized into a dictionary.
 import pandas as pd
 import numpy as np
 from librosa.core import load
-from personal_utilities import search_files
+from preprocessing_utils import search_files
 import pickle
 
 #%% Set variables 
@@ -29,7 +29,8 @@ save_pickle = True
 flist_full = pd.read_csv(fname_csv)
 flist_full['date_fmt'] = pd.to_datetime(flist_full.date,  format='%Y-%m-%d %H:%M:%S')
 
-sensor_name_list = flist_full.sensor_name.unique()[0:9]
+sensor_name_list = flist_full.sensor_name.unique()[89:]  # to process in small batches.
+#sensor_name_list = flist_full.sensor_name.unique()  # to process all the data in one batch
 
 #%% Loop by sensor
 for sensor_name in sensor_name_list:
