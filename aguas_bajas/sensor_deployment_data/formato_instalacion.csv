@@ -1,5 +1,6 @@
 Fecha,Hora,Estación ANH,Grabadora,dosel (%),Estado de la grabadora,Descripción de vegetación,Ruido 1,Ruido 2,Ruido 3,Ruido 4,Cambio de memoria ,Cambio de baterías,Play Chime,Foto de vegetación,Instaladores
-16/04/2022,10:25:00,ANH393,G6606,,,,,,,,,,,,
+16/04/2022,10:25:00,ANH393,G6606,10.33,Buena,Bosque. al lado de caño. mayor hojarasca ,53.6,50.8,53.4,48.8,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-16 10.27.35.jpg;Cristina Carranza, O. Fabián Hernández-Leal
+16/04/2022,10:25:00,ANH393,G6597,10.33,Buena,Bosque. al lado de caño. mayor hojarasca ,53.6,50.8,53.4,48.8,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-16 10.27.35.jpg;Cristina Carranza, O. Fabián Hernández-Leal
 16/04/2022,11:12:00,ANH284,G002,17.2,Buena,Bosque. cerca a vía.,54.9,53.8,43.8,52.8,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-16 11.14.39.jpg,Cristina Carranza
 16/04/2022,11:52:00,ANH364,G038,23.36,Buena,Bosque. entre palma y bosque.,33.9,38,41.7,53.6,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-16 11.53.09.jpg,Cristina Carranza
 16/04/2022,12:23:00,ANH058,G017,44.57,Buena,Bosque. junto a cañada.,56.6,52.6,57.5,59.6,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-16 12.24.51.jpg,Cristina Carranza
@@ -76,7 +77,7 @@ Fecha,Hora,Estación ANH,Grabadora,dosel (%),Estado de la grabadora,Descripción
 26/04/2022,14:02:00,ANH064,G048,29.49,Buena,Palma. en fruto,53.3,46.5,52.2,57.9,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-26 14.11.13.jpg,Cristina Carranza
 26/04/2022,15:08:00,ANH228,G037,41.8,Buena,Bosque. mayor hojarasc,51.2,58,55.9,47.8,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-26 15.08.57.jpg,Cristina Carranza
 26/04/2022,16:09:00,ANH242,G093,38.47,Buena,Bosque. mayor hojarasca. La CT se traslada al árbol siguiente. la CT estaba configurada como ANH246.,37.1,46.2,52.7,47.1,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-26 16.11.18.jpg,Cristina Carranza
-27/04/2022,7:45:00,ANH085,G6598,,,,,,,,,,,,
+27/04/2022,7:45:00,ANH085,G6598,31.83,Buena,Arbustal creció pasto alrededor,65.4,55.8,52.1,50,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-27 07.46.17.jpg,
 27/04/2022,8:32:00,ANH223,G052,5.35,Robada ,Palma ,0,0,0,0,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-27 08.33.11.jpg,Cristina Carranza
 27/04/2022,9:18:00,ANH280,G041,26.5,Buena,Herbazal. Río Magdalena se creció.,50.2,49.2,56.3,51.4,TRUE,TRUE,TRUE,file:///storage/emulated/0/DCIM/Camera/IMG_20220427_090235340_HDR.jpg,Cristina Carranza
 27/04/2022,9:38:00,ANH038,G046,36.84,Buena,Arbustal. sin cambios significativos ,48.4,64.7,46.3,54,TRUE,TRUE,TRUE,file:///data/user/0/com.luckydroid.droidbase/files/files/-208641807/2022-04-27 09.39.40.jpg,Cristina Carranza
