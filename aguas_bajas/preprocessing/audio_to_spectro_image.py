@@ -17,6 +17,7 @@ from maad import sound, util
 from preprocessing_utils import listdir_pattern
 from skimage import io
 from skimage.filters import gaussian
+import os
 
 #%% settings
 fs = 192000

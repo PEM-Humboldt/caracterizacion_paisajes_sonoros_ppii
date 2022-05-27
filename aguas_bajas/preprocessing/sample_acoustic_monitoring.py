@@ -17,7 +17,7 @@ import pickle
 path_dir = '/Volumes/PAPAYA/anh_aguas_bajas/'
 path_save = '/Volumes/PAPAYA/pkl_data/'
 fname_csv = '../audio_metadata/audio_metadata_aguas_bajas.csv'
-date_range = ['2019-01-01 00:00:00','2022-12-01 23:50:00']
+date_range = ['2022-01-01 00:00:00','2022-12-01 23:50:00'] # dates of acoustic monitoring
 num_days = 5  # number of days to sample
 num_rec_perday = 48  # number of recordings per day
 t_window = 5 # window of audio per file in seconds
@@ -29,6 +29,7 @@ save_pickle = True
 flist_full = pd.read_csv(fname_csv)
 flist_full['date_fmt'] = pd.to_datetime(flist_full.date,  format='%Y-%m-%d %H:%M:%S')
 
+flist_full.sort_values('sensor_name', inplace=True)
 sensor_name_list = flist_full.sensor_name.unique()[89:]  # to process in small batches.
 #sensor_name_list = flist_full.sensor_name.unique()  # to process all the data in one batch
 
@@ -39,6 +40,7 @@ for sensor_name in sensor_name_list:
     idx_dates = (flist_full['date_fmt'] > date_range[0]) & (flist_full['date_fmt'] <= date_range[1])
     idx_sensor = (flist_full.sensor_name==sensor_name)
     flist = flist_full.loc[idx_dates & idx_sensor,:]
+    flist.sort_values('date_fmt', inplace=True)
     flist = flist.groupby(flist.date_fmt.dt.dayofyear).filter(lambda x:len(x)==num_rec_perday)
     flist = flist.iloc[0:num_days*num_rec_perday,:]
     # select days with 48 samples per day
