@@ -20,11 +20,10 @@ n_samples_per_site = 6
 peak_hours = ['05', '06', '07', '08', '17', '18', '19', '20']
 
 #%% Load data
-
 df = pd.read_csv(path_audio_metadata)
 df['hour'] = df.date.str[11:13].astype(str)
 sensor_list = df.sensor_name.unique()[0:45]  # to process in batches
-# sensor_list = df.sensor_name.unique()[0:45]  # to process in a singlo run
+# sensor_list = df.sensor_name.unique()  # to process in a singlo run
 
 #%% Batch process
 flist_out = pd.DataFrame()
@@ -45,7 +44,6 @@ flist_out.hour.value_counts() / len(flist_out)
 flist_out.to_csv('../manual_annotation/random_flist_mannot.csv', index=False)
 
 #%% Copy selected files to a new folder
-
 for idx, row in flist_out.iterrows():
     src_file = row.path_audio
     dst_file = path_save_files + row.fname
