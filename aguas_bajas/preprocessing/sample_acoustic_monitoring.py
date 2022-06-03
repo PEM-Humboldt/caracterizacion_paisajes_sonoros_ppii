@@ -30,7 +30,7 @@ flist_full = pd.read_csv(fname_csv)
 flist_full['date_fmt'] = pd.to_datetime(flist_full.date,  format='%Y-%m-%d %H:%M:%S')
 
 flist_full.sort_values('sensor_name', inplace=True)
-sensor_name_list = flist_full.sensor_name.unique()[89:]  # to process in small batches.
+sensor_name_list = flist_full.sensor_name.unique()[90:]  # to process in small batches.
 #sensor_name_list = flist_full.sensor_name.unique()  # to process all the data in one batch
 
 #%% Loop by sensor

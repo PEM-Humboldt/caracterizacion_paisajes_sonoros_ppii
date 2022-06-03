@@ -20,8 +20,12 @@ from skimage.filters import gaussian
 import os
 
 #%% settings
+# Audiomoth config
 fs = 192000
 opt_spec = {'wl': 4096, 'ovlp': 0.5, 'fcrop': [10,60000], 'db_range': 250}
+# SM Micro config
+#fs = 48000
+#opt_spec = {'wl': 1024, 'ovlp': 0.5, 'fcrop': [10,24000], 'db_range': 250}
 fpath = '/Volumes/PAPAYA/pkl_data/'
 path_save = '/Volumes/PAPAYA/pkl_data/'
 fmt = '.png'

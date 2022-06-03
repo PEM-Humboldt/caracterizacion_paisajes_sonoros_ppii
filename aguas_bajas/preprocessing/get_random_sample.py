@@ -13,7 +13,6 @@ import shutil
 import pandas as pd
 import matplotlib.pyplot as plt
 
-path_files = 'Dropbox/Audiolib/ML_datasets/Putumayo_2018/1k_random_samples/'
 path_audio_metadata = '../audio_metadata/audio_metadata_aguas_bajas.csv'
 path_save_files = '/Volumes/PAPAYA/aguas_bajas_muestreo_aleatorio/'
 n_samples_per_site = 6
@@ -22,7 +21,7 @@ peak_hours = ['05', '06', '07', '08', '17', '18', '19', '20']
 #%% Load data
 df = pd.read_csv(path_audio_metadata)
 df['hour'] = df.date.str[11:13].astype(str)
-sensor_list = df.sensor_name.unique()[0:45]  # to process in batches
+sensor_list = df.sensor_name.unique()[0:90]  # to process in batches
 # sensor_list = df.sensor_name.unique()  # to process in a singlo run
 
 #%% Batch process
