@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 #%% Set variables
 path_annotations = r'C:\Users\gabriel.perilla\Documents\Ecoacustica\ANH_RAIN_DATASET/audio_labels.csv'  # manual annotations in csv table
 path_audio = r'C:\Users\gabriel.perilla\Documents\Ecoacustica\ANH_RAIN_DATASET\audio'  # directory where the audio data is located
+path_save_models = './models/'
 target_fs = 10000  # set target sampling rate for audio
 
 #%% Load annotations
@@ -33,8 +34,8 @@ for idx_row, row in df.iterrows():
     full_path_audio = os.path.join(path_audio, row.sample_idx)
     s, fs = sound.load(full_path_audio)
     # resample
-    s_trim = sound.trim(s, fs, 30, 40)
-    s_resamp = sound.resample(s_trim, fs, target_fs, res_type='kaiser_fast')
+    #s_trim = sound.trim(s, fs, 30, 40)
+    s_resamp = sound.resample(s, fs, target_fs, res_type='kaiser_fast')
     # transform
     mfcc = feature.mfcc(y=s_resamp, sr=target_fs, n_mfcc=20, n_fft=1024,
                         win_length=1024, hop_length=512, htk=True)
@@ -100,7 +101,7 @@ ax[1,1].set_xlabel(params[1]); ax[1,1].set_ylabel(metrics[1]);
 
 #%% Saving parameters and scores
 results = pd.DataFrame(clf_gs.cv_results_).sort_values("rank_test_"+metric)
-results.to_csv(path_or_buf = os.path.join(path_audio, "tuning"+metric+".csv"), index=True)
+results.to_csv(path_or_buf = os.path.join(path_save_models, "tuning"+metric+".csv"), index=True)
 
 #%% Final evaluation on test data
 y_pred = clf_gs.predict(X_test)
@@ -109,7 +110,7 @@ print(classification_report(y_test, y_pred, labels=[1,0]))
 print('Final test metrics:', score)
 
 #%% Saving best model
-dump(clf_gs.best_estimator_, os.path.join(path_audio, 'MLP_rain.joblib'))
+dump(clf_gs.best_estimator_, os.path.join(path_save_models, 'MLP_rain.joblib'))
 clf_best = load(os.path.join(r'C:\Users\gabriel.perilla\Documents\Ecoacustica\ANH_RAIN_DATASET\audio', 'MLP_rain.joblib'))
 
 #%% loading new audio data
