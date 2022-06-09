@@ -48,5 +48,5 @@ for idx, fname in enumerate(flist):
     pred_clf = clf.predict_proba(mfcc.reshape(1,20))[:,1]
     df_pred[os.path.basename(fname)] = np.round(pred_clf,2)
       
-df_pred = pd.DataFrame(df_pred, index=['proba_rain']).T
-df_pred.to_csv('rain_predictions.csv')
+df_pred_out = pd.DataFrame(df_pred, index=['proba_rain']).T
+df_pred_out.to_csv('rain_predictions.csv')
