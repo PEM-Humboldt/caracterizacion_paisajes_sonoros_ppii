@@ -12,11 +12,11 @@ import glob
 from maad import util
 
 #%%
-path_audio = '/Volumes/PAPAYA/anh_aguas_bajas/'
-path_save = '../audio_metadata/audio_metadata_aguas_bajas.csv'
+path_audio = r'C:\Users\gabriel.perilla\Documents\Ecoacustica\anh_monitoreo_acustico\G021'
+path_save = r'C:\Users\gabriel.perilla\Documents\Ecoacustica\anh_monitoreo_acustico\G021/metadata.csv'
 
 #%% Get audio metadata
-df = util.get_metadata_dir('/Volumes/PAPAYA/anh_aguas_bajas/', verbose=True)
+df = util.get_metadata_dir(r'C:\Users\gabriel.perilla\Documents\Ecoacustica\anh_monitoreo_acustico\G021/G021_20211110_000000.wav', verbose=True)
 
 #%% Post process
 
@@ -40,7 +40,7 @@ df.to_csv(path_save, index=False)
 
 #%% Plot sampling
 import seaborn as sns
-sns.scatterplot(x=plt_data.date, y =plt_data.site)
+sns.scatterplot(x=df.date, y =df.site)
 plt.xticks(rotation=15)
-plt.plot(df.df.site)
+plt.plot(df.site)
 
