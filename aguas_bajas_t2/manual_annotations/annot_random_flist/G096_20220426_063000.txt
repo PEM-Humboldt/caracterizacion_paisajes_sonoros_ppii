@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	0.000000000	59.999994792	6752.542	7322.034		BIO	INSECT			MALO
+1	Spectrogram 1	1	0.000000000	59.999994792	6752.542	7322.034	7125.000	BIO	INSECT			MALO
+2	Waveform 1	1	8.208091773	48.959533322	0.000	48488.136		GEO	LLUVIA			
+2	Spectrogram 1	1	8.208091773	48.959533322	0.000	48488.136	7125.000	GEO	LLUVIA			

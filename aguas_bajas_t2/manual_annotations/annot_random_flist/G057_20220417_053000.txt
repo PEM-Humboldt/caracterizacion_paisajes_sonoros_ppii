@@ -1,0 +1,3 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	0.000000000	59.999994792	0.000	42556.701		GEO	LLUVIA			
+1	Spectrogram 1	1	0.000000000	59.999994792	0.000	42556.701	2625.000	GEO	LLUVIA			

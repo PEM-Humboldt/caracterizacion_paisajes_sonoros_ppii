@@ -1,0 +1,3 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	0.346820779	37.861268390	2766.102	6427.119		BIO	AVEVOC			REGULA
+1	Spectrogram 1	1	0.346820779	37.861268390	2766.102	6427.119	4125.000	BIO	AVEVOC			REGULA

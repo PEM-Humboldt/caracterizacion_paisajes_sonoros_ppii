@@ -1,0 +1,4 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación
+1	Spectrogram 1	1	0.000000000	59.999994792	6824.281	8511.182	7828.125	BIO	INSECT	
+2	Spectrogram 1	1	0.000000000	59.999994792	3297.125	3987.220	3703.125	BIO	INSECT	
+3	Spectrogram 1	1	0.000000000	59.999994792	17663.774	25331.506	21187.500	BIO	INSECT	

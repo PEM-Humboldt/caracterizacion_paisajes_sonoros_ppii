@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	1.849710822	58.612711675	1057.627	5369.492		BIO	AVEVOC			MALO
+1	Spectrogram 1	1	1.849710822	58.612711675	1057.627	5369.492	3750.000	BIO	AVEVOC			MALO
+2	Waveform 1	1	0.000000000	59.999994792	0.000	42110.007		GEO	LLUVIA			
+2	Spectrogram 1	1	0.000000000	59.999994792	0.000	42110.007	15375.000	GEO	LLUVIA			

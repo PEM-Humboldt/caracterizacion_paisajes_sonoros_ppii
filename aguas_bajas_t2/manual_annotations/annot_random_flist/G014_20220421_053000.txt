@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	0.000000000	59.999994792	0.000	52718.644		GEO	LLUVIA			
+1	Spectrogram 1	1	0.000000000	59.999994792	0.000	52718.644	0.000	GEO	LLUVIA			
+2	Waveform 1	1	0.404624242	59.999994792	0.000	2603.390		BIO	AVEVOC	ARACAJ		BUENO
+2	Spectrogram 1	1	0.404624242	59.999994792	0.000	2603.390	0.000	BIO	AVEVOC	ARACAJ		BUENO

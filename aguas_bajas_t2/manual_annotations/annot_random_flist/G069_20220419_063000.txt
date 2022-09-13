@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	0.000000000	30.751442417	0.000	690.328		ANT	TRAMOT			
+1	Spectrogram 1	1	0.000000000	30.751442417	0.000	690.328	0.000	ANT	TRAMOT			
+2	Waveform 1	1	0.000000000	59.999994792	6558.116	8283.936		BIO	INSECT			REGULA
+2	Spectrogram 1	1	0.000000000	59.999994792	6558.116	8283.936	7125.000	BIO	INSECT			REGULA

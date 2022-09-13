@@ -1,0 +1,3 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	33.352598261	59.999994792	6996.610	7972.881		BIO	INSECT			MUYMAL
+1	Spectrogram 1	1	33.352598261	59.999994792	6996.610	7972.881	7500.000	BIO	INSECT			MUYMAL

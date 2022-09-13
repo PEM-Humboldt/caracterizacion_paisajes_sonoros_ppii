@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación	Comportamiento	Calidad
+1	Waveform 1	1	35.664736788	49.479764491	0.000	813.559			PULSOS			
+1	Spectrogram 1	1	35.664736788	49.479764491	0.000	813.559	375.000		PULSOS			
+2	Waveform 1	1	0.000000000	59.999994792	0.000	23430.508		BIO				
+2	Spectrogram 1	1	0.000000000	59.999994792	0.000	23430.508	2250.000	BIO				

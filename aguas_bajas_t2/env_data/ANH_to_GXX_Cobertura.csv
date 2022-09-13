@@ -1,0 +1,109 @@
+eventID,sensor_name,decimalLat,decimalLon,GrupoBiolo,Cobertura,Plataf
+ANH_274,G001,7.411138889,-73.79141667,Sensores Pasivos,Bosque Ripario,Kale
+ANH_284,G002,7.342555556000001,-73.7065,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_089,G003,7.274891,-73.757132,Sensores Pasivos,Palma,Caracterizacion
+ANH_257,G004,7.255388889,-73.78183333,Sensores Pasivos,Palma,Caracterizacion
+ANH_324,G005,7.365361111,-73.87716667,Sensores Pasivos,Herbazales,Kale
+ANH_390,G006,7.295555556,-73.70641667,Sensores Pasivos,Bosque Denso,Caracterizacion
+ANH_232,G007,7.2954166670000005,-73.87488889,Sensores Pasivos,Bosque Ripario,Platero
+ANH_291,G008,7.400527778,-73.86597222,Sensores Pasivos,Bosque Ripario,Kale
+ANH_062,G010,7.288832000000001,-73.72220899999999,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_211,G011,7.381027777999999,-73.80144444,Sensores Pasivos,Palma,Kale
+ANH_350,G012,7.20975,-73.87575,Sensores Pasivos,Palma,Platero
+ANH_214,G013,7.3503888889999995,-73.73913889,Sensores Pasivos,Palma,Caracterizacion
+ANH_121,G014,7.368472222,-73.89280556,Sensores Pasivos,Herbazales,Kale
+ANH_327,G015,7.225138889,-73.85913889,Sensores Pasivos,Palma,Platero
+ANH_360,G016,7.319888889,-73.71069444,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_058,G017,7.358,-73.71075,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_182,G018,7.255944445,-73.86463889,Sensores Pasivos,Bosque Ripario,Platero
+ANH_222,G019,7.2863888889999995,-73.80555556,Sensores Pasivos,Palma,Platero
+ANH_077,G020,7.364944,-73.747972,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_217,G021,7.354972222000001,-73.72508333,Sensores Pasivos,Palma,Caracterizacion
+ANH_235,G022,7.2688611110000005,-73.82702778,Sensores Pasivos,Bosque Ripario,Platero
+ANH_252,G023,7.293113926,-73.76209124,Sensores Pasivos,Bosque Denso,Caracterizacion
+ANH_238,G024,7.348388889,-73.82058333,Sensores Pasivos,Bosque Ripario,Kale
+ANH_192,G025,7.445833334,-73.86736111,Sensores Pasivos,Pastos,Kale
+ANH_081,G026,7.402611,-73.853472,Sensores Pasivos,Palma,Kale
+ANH_282,G027,7.435444445,-73.80936111,Sensores Pasivos,Herbazales,Kale
+ANH_243,G029,7.379222222,-73.78475,Sensores Pasivos,Bosque Ripario,Kale
+ANH_248,G030,7.260694445,-73.81363889,Sensores Pasivos,Bosque Ripario,Platero
+ANH_069,G031,7.283222,-73.79655600000001,Sensores Pasivos,Palma,Platero
+ANH_230,G032,7.308972222,-73.85983333,Sensores Pasivos,Bosque Ripario,Platero
+ANH_159,G033,7.278055556,-73.82661111,Sensores Pasivos,Bosque Ripario,Platero
+ANH_334,G035,7.219888889,-73.88869444,Sensores Pasivos,Bosque Ripario,Platero
+ANH_289,G036,7.309314725,-73.71706988,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_375,G047,7.323666667,-73.71661111,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_228,G037,7.370194445,-73.84625,Sensores Pasivos,Bosque Ripario,Kale
+ANH_364,G038,7.351472222000001,-73.70275,Sensores Pasivos,Palma,Caracterizacion
+ANH_099,G039,7.2305,-73.83025,Sensores Pasivos,Bosque Ripario,Platero
+ANH_250,G040,7.3065277779999995,-73.79180556,Sensores Pasivos,Bosque Ripario,Platero
+ANH_280,G041,7.25675,-73.91444444,Sensores Pasivos,Herbazales,Platero
+ANH_272,G042,7.2690451529999995,-73.71270915,Sensores Pasivos,Pastos,Caracterizacion
+ANH_234,G043,7.263861111000001,-73.8535,Sensores Pasivos,Bosque Ripario,Platero
+ANH_395,G044,7.325611111000001,-73.80152778,Sensores Pasivos,Bosque Ripario,Kale
+ANH_254,G045,7.255666667000001,-73.84058333,Sensores Pasivos,Palma,Platero
+ANH_038,G046,7.2492220000000005,-73.895306,Sensores Pasivos,Pastos,Platero
+ANH_194,G049,7.382194445,-73.873,Sensores Pasivos,Herbazales,Kale
+ANH_064,G048,7.372222,-73.862972,Sensores Pasivos,Palma,Kale
+ANH_241,G050,7.381805556000001,-73.81436111,Sensores Pasivos,Bosque Ripario,Kale
+ANH_370,G051,7.285944445,-73.85475,Sensores Pasivos,Bosque Ripario,Platero
+ANH_223,G052,7.263611111,-73.90430556,Sensores Pasivos,Palma,Platero
+ANH_145,G053,7.238027878,-73.91163889,Sensores Pasivos,Palma,Platero
+ANH_388,G054,7.443805556,-73.79955556,Sensores Pasivos,Palma,Kale
+ANH_239,G055,7.357861111,-73.82833333,Sensores Pasivos,Bosque Ripario,Kale
+ANH_389,G056,7.454416667,-73.78519444,Sensores Pasivos,Bosque Ripario,Kale
+ANH_012,G057,7.396611,-73.839722,Sensores Pasivos,Palma,Kale
+ANH_181,G058,7.264111111,-73.8785,Sensores Pasivos,Bosque Ripario,Platero
+ANH_236,G059,7.244333333999999,-73.86847222,Sensores Pasivos,Palma,Platero
+ANH_351,G060,7.288138889,-73.88508333,Sensores Pasivos,Palma,Platero
+ANH_353,G061,7.343194445,-73.87822222,Sensores Pasivos,Palma,Kale
+ANH_209,G062,7.372999999999999,-73.82802778,Sensores Pasivos,Palma,Kale
+ANH_338,G063,7.279083334,-73.80711111,Sensores Pasivos,Bosque Ripario,Platero
+ANH_215,G064,7.356083334,-73.76063889,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_210,G065,7.350805556,-73.80047222,Sensores Pasivos,Palma,Kale
+ANH_275,G066,7.383444445,-73.82483333,Sensores Pasivos,Bosque Ripario,Kale
+ANH_221,G067,7.306722222,-73.84922222,Sensores Pasivos,Palma,Platero
+ANH_106,G068,7.38475,-73.84575,Sensores Pasivos,Bosque Ripario,Kale
+ANH_225,G069,7.2953333339999995,-73.843,Sensores Pasivos,Palma,Platero
+ANH_160,G070,7.263055556,-73.82136111,Sensores Pasivos,Bosque Ripario,Platero
+ANH_183,G071,7.269583334,-73.84883333,Sensores Pasivos,Bosque Ripario,Platero
+ANH_189,G072,7.3047222220000005,-73.70386111,Sensores Pasivos,Bosque Denso,Caracterizacion
+ANH_213,G074,7.354138889,-73.78863889,Sensores Pasivos,Palma,Kale
+ANH_088,G075,7.368556,-73.798417,Sensores Pasivos,Bosque Ripario,Kale
+ANH_240,G076,7.395027777999999,-73.80772222,Sensores Pasivos,Bosque Ripario,Kale
+ANH_166,G077,7.407027778,-73.86494444,Sensores Pasivos,Herbazales,Kale
+ANH_279,G078,7.269583334,-73.81569444,Sensores Pasivos,Herbazales,Platero
+ANH_227,G079,7.250833334,-73.81491667,Sensores Pasivos,Palma,Platero
+ANH_253,G080,7.333166667,-73.83427778,Sensores Pasivos,Bosque Ripario,Kale
+ANH_212,G081,7.390583334,-73.783,Sensores Pasivos,Palma,Kale
+ANH_031,G028,7.423166999999999,-73.775972,Sensores Pasivos,Herbazales,Kale
+ANH_283,G082,7.415333334,-73.84297222,Sensores Pasivos,Herbazales,Kale
+ANH_336,G083,7.238555556000001,-73.82358333,Sensores Pasivos,Bosque Ripario,Platero
+ANH_101,G084,7.274133,-73.738422,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_312,G085,7.344193269,-73.75756446,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_363,G086,7.371444445,-73.77575,Sensores Pasivos,Bosque Ripario,Kale
+ANH_233,G087,7.284666667000001,-73.8395,Sensores Pasivos,Bosque Ripario,Platero
+ANH_095,G088,7.370163000000001,-73.721601,Sensores Pasivos,Palma,Caracterizacion
+ANH_197,G089,7.417861111000001,-73.85855556,Sensores Pasivos,Bosque Abierto,Kale
+ANH_231,G090,7.307944445,-73.83508333,Sensores Pasivos,Bosque Ripario,Platero
+ANH_317,G091,7.304583334,-73.82708333,Sensores Pasivos,Bosque Ripario,Platero
+ANH_135,G092,7.239027778,-73.87933333,Sensores Pasivos,Bosque Ripario,Platero
+ANH_208,G098,7.347972222,-73.83280556,Sensores Pasivos,Palma,Kale
+ANH_242,G093,7.391888889,-73.77269444,Sensores Pasivos,Bosque Ripario,Kale
+ANH_226,G094,7.240833222000001,-73.89630567,Sensores Pasivos,Palma,Platero
+ANH_109,G095,7.380638889,-73.88080556,Sensores Pasivos,Palma,Kale
+ANH_256,G096,7.295527777999999,-73.78208333,Sensores Pasivos,Palma,Caracterizacion
+ANH_290,G097,7.324361111,-73.74205556,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_229,G099,7.334694445,-73.85297222,Sensores Pasivos,Palma,Kale
+ANH_066,G100,7.364778,-73.810528,Sensores Pasivos,Palma,Kale
+ANH_361,G6585,7.428999999999999,-73.81827778,Sensores Pasivos,Bosque Ripario,Kale
+ANH_361,G6611,7.428999999999999,-73.81827778,Sensores Pasivos,Bosque Ripario,Kale
+ANH_361,G6599,7.428999999999999,-73.81827778,Sensores Pasivos,Bosque Ripario,Kale
+ANH_361,SMU05597,7.428999999999999,-73.81827778,Sensores Pasivos,Bosque Ripario,Kale
+ANH_085,G6594,7.276944,-73.904,Sensores Pasivos,Herbazales,Platero
+ANH_085,G6598,7.276944,-73.904,Sensores Pasivos,Herbazales,Platero
+ANH_085,G6600,7.276944,-73.904,Sensores Pasivos,Herbazales,Platero
+ANH_393,G6597,7.340527777999999,-73.72497222,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_393,G6606,7.340527777999999,-73.72497222,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_393,SMU06597,7.340527777999999,-73.72497222,Sensores Pasivos,Bosque Ripario,Caracterizacion
+ANH_393,G6604,7.340527777999999,-73.72497222,Sensores Pasivos,Bosque Ripario,Caracterizacion
