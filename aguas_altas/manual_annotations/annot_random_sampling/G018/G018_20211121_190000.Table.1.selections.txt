@@ -1,3 +1,0 @@
-Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Center Freq (Hz)	Tipo	Id	Determinación
-1	Waveform 1	1	0.000000000	59.999997396	0.000	96000.000		BIO	INSECT	
-1	Spectrogram 1	1	0.000000000	59.999997396	0.000	96000.000	17625.000	BIO	INSECT	
