@@ -29,7 +29,7 @@ ax.set_xticks([0, 6, 12, 18, 24])
 #%% Multiple plots by cover
 
 # load env data
-df_env = pd.read_csv('../../../env_data/ANH_to_GXX.csv')
+df_env = pd.read_csv('../../env_data/ANH_to_GXX_Cobertura.csv')
 df_env = df_env[['sensor_name', 'Cobertura']]
 
 # load indices data

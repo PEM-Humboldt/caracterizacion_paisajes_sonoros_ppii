@@ -12,8 +12,8 @@ import glob
 from maad import util
 
 #%% Set variables
-path_audio = '/Volumes/MANGO/anh_aguas_bajas_t3/'
-path_save = '../audio_metadata/audio_metadata_aguas_bajas_t3.csv'
+path_audio = '/Volumes/Humboldt/'
+path_save = '../audio_metadata/audio_metadata_aguas_bajas_t4.csv'
 
 #%% Get audio metadata
 df = util.get_metadata_dir(path_audio, verbose=True)
@@ -37,10 +37,4 @@ df.length.value_counts()
 
 # save dataframe to csv
 df.to_csv(path_save, index=False)
-
-#%% Plot sampling
-import seaborn as sns
-sns.scatterplot(x=df.date, y=df.site)
-plt.xticks(rotation=15)
-plt.plot(df.site)
 

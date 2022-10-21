@@ -6,15 +6,20 @@ import numpy as np
 
 
 #%% Set variables and load data
-path_sensor_deployment = '../sensor_deployment/sensor_deployment_t3.xlsx'
-path_audio_metadata = '../audio_metadata/audio_metadata_aguas_bajas_t3.csv'
+path_sensor_deployment = '../sensor_deployment/sensor_deployment_t4.xlsx'
+path_audio_metadata = '../audio_metadata/audio_metadata_aguas_bajas_t4.csv'
 path_env_data = '../env_data/ANH_to_GXX_Cobertura.csv'
-path_save = '../audio_metadata/I2D-BIO_aguas_bajas_t3.xlsx'
+path_save = '../audio_metadata/I2D-BIO_aguas_bajas_t4.xlsx'
 
 # load data
 df_sensor_deployment = pd.read_excel(path_sensor_deployment)
 df_audio_metadata = pd.read_csv(path_audio_metadata)
 df_env = pd.read_csv(path_env_data)
+
+# check consistency between data -- all results should be empty arrays
+np.setdiff1d(df_audio_metadata.sensor_name.unique(), df_sensor_deployment.sensor_name.unique())
+np.setdiff1d(df_sensor_deployment.sensor_name.unique(), df_env.sensor_name.unique())
+np.setdiff1d(df_audio_metadata.sensor_name.unique(), df_env.sensor_name.unique())
 
 #%% 
 """
@@ -30,7 +35,7 @@ fixed_value = {
     'sampleSizeUnit': 'grabadora',
     'samplingProtocol': 'Muestreo Acústico Pasivo - Grabadora automática Audiomoth',
     'samplingEffort': '1 minuto de grabación cada 30 minutos',
-    'eventRemarks': 'Temporada aguas bajas - T3',
+    'eventRemarks': 'Aguas bajas T4 | Buena',
     'continent': 'SA',
     'country': 'Colombia',
     'countryCode': 'CO',
@@ -67,11 +72,6 @@ fixed_value = {
 #%% Step 2. Set Variable values
 # Merge metadata and sensor deployment information
 
-
-
-# check consistency between data
-np.setdiff1d(df_audio_metadata.sensor_name.unique(), df_sensor_deployment.sensor_name.unique())
-np.setdiff1d(df_sensor_deployment.sensor_name.unique(), df_env.sensor_name.unique())
 
 # get start-end dates
 df_dates = pd.DataFrame()
@@ -114,7 +114,7 @@ variable_value = pd.DataFrame({
 #%% Step 3. Merge fixed and variable values into an excel sheet
 
 eventos = pd.DataFrame({
-('ID grabadora', 'eventID1'): variable_value['eventID1'],
+('ID grabadora', 'eventID1'): variable_value['eventID1']+'_T4',
 ('Unidad de muestreo', 'parentEventID'): variable_value['parentEventID'],
 (' ', 'sampleSizeValue'): fixed_value['sampleSizeValue'],
 (' ', 'sampleSizeUnit'): fixed_value['sampleSizeUnit'],
@@ -179,17 +179,17 @@ df_registros = df_audio_metadata.merge(df_env, on='sensor_name')
 
 # change local file location by NAS location
 df_registros['path_audio'] = df_registros['path_audio'].str.replace(
-        '/Volumes/MANGO/anh_aguas_bajas_t3/',
-        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T2/audios_monitoreo_acustico_pasivo/')
+        '/Volumes/Humboldt/',
+        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T4/audios_monitoreo_acustico_pasivo/')
 
 df_registros['path_audio'] = df_registros['path_audio'].str.replace(
-        '/Volumes/Audiolib/tmp/anh_aguas_bajas_t3/',
-        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T2/audios_monitoreo_acustico_pasivo/')
+        '/Volumes/Humboldt/',
+        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T4/audios_monitoreo_acustico_pasivo/')
 
 
 #%%
 registros = pd.DataFrame({
-('ID grabadora', 'eventID1'):  df_registros['sensor_name'],
+('ID grabadora', 'eventID1'):  df_registros['sensor_name']+'_T4',
 ('Nombre del archivo', 'eventID'):  df_registros['fname'],
 ('Unidad de muestreo', 'parentEventID'):  df_registros['eventID'],
 ('Sonido', 'type'):  'Sonido',

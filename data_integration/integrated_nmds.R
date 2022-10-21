@@ -2,9 +2,12 @@
 library(vegan)
 library(ade4)
 library(RColorBrewer)
-
+# remove sites aguas altas t1: NA
+# remove sites aguas bajas t2: c('G003', 'G060', 'G068', 'G098')
+# remove sites aguas bajas t3: c('G012', 'G021', 'G051', 'G068', 'G083')
+# remove sites aguas bajas t4: c('G005','G012','G068', 'G083', 'G024')
 # ---------------------- load aguas altas ------------------------ #
-path_gs = '../aguas_altas/acoustic_community_characterization/graphical_soundscapes/dataframes/'
+path_gs = '../aguas_altas_t1/acoustic_community_characterization/graphical_soundscapes/dataframes/'
 sites = list.files(path_gs, pattern='*.csv')
 # load data and organize as a community matrix (sites as rows, soundscape component (species) as columns)
 tf_bins = list()
@@ -18,12 +21,12 @@ tf_bins = as.data.frame(do.call(rbind, tf_bins))
 tf_bins['sensor_name'] = row.names(tf_bins)
 tf_bins['period'] = 'T1'
 # load environmental data
-env = read.csv('../aguas_altas/env_data/ANH_to_GXX.csv')[c('sensor_name', 'eventID')]
+env = read.csv('../aguas_altas_t1/env_data/ANH_to_GXX.csv')[c('sensor_name', 'eventID')]
 # merge data
-df_aguas_altas = merge(tf_bins, env, by='sensor_name') 
+df_aguas_altas_t1 = merge(tf_bins, env, by='sensor_name') 
 
 # ---------------------- load aguas bajas 1 ------------------------ #
-path_gs = '../aguas_bajas/acoustic_community_characterization/graphical_soundscape/dataframes/'
+path_gs = '../aguas_bajas_t2/acoustic_community_characterization/graphical_soundscape/dataframes/'
 sites = list.files(path_gs, pattern='*.csv')
 # load data and organize as a community matrix (sites as rows, soundscape component (species) as columns)
 tf_bins = list()
@@ -37,13 +40,13 @@ tf_bins = as.data.frame(do.call(rbind, tf_bins))
 tf_bins['sensor_name'] = row.names(tf_bins)
 tf_bins['period'] = 'T2'
 # load environmental data
-env = read.csv('../aguas_bajas/env_data/ANH_to_GXX.csv')[c('sensor_name', 'eventID')]
+env = read.csv('../aguas_bajas_t2/env_data/ANH_to_GXX.csv')[c('sensor_name', 'eventID')]
 # merge data
-df_aguas_bajas_1 = merge(tf_bins, env, by='sensor_name') 
+df_aguas_bajas_t2 = merge(tf_bins, env, by='sensor_name') 
 
 # ------------------------- merge dataframes ------------------- #
-env = read.csv('../aguas_altas/env_data/ANH_to_GXX.csv')[c('eventID', 'Cobertura')]
-df = rbind(df_aguas_altas, df_aguas_bajas_1)
+env = read.csv('../aguas_altas_t1/env_data/ANH_to_GXX.csv')[c('eventID', 'Cobertura')]
+df = rbind(df_aguas_altas_t1, df_aguas_bajas_t2)
 df = merge(df, env, by = 'eventID')
 
 

@@ -56,9 +56,9 @@ sns.boxplot(x='Cobertura', y='dist_centroid', data=df,
             palette=colors, boxprops=dict(alpha=.5),
             fliersize=0,
             ax=ax)
-ax.set_ylabel('Distancia a centroide de grupo')
 sns.swarmplot(x='Cobertura', y='dist_centroid', data=df, color='gray', alpha=0.5, ax=ax,
               order=['Bosque Denso', 'Bosque Ripario', 'Herbazales', 'Palma', 'Pastos'])
+ax.set_ylabel(r'Diversidad $\beta$')
 sns.despine(trim=True)
 
 # statistical annotation

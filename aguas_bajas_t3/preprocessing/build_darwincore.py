@@ -30,7 +30,7 @@ fixed_value = {
     'sampleSizeUnit': 'grabadora',
     'samplingProtocol': 'Muestreo Acústico Pasivo - Grabadora automática Audiomoth',
     'samplingEffort': '1 minuto de grabación cada 30 minutos',
-    'eventRemarks': 'Temporada aguas bajas - T3',
+    'eventRemarks': 'Aguas bajas T3 | Buena',
     'continent': 'SA',
     'country': 'Colombia',
     'countryCode': 'CO',
@@ -93,7 +93,7 @@ df_merge = df_merge.merge(df_dates, on='sensor_name')
 
 # format audio_metadata for event sheet
 variable_value = pd.DataFrame({
-    'eventID1': df_merge['sensor_name'],
+    'eventID1': df_merge['sensor_name'] + '_T3',
     'parentEventID': df_merge['eventID_x'],
     'eventDate': df_merge['date_ini'] + '/' + df_merge['date_end'],
     'eventTime': df_merge['time_ini'] + '/' + df_merge['time_end'],
@@ -180,16 +180,16 @@ df_registros = df_audio_metadata.merge(df_env, on='sensor_name')
 # change local file location by NAS location
 df_registros['path_audio'] = df_registros['path_audio'].str.replace(
         '/Volumes/MANGO/anh_aguas_bajas_t3/',
-        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T2/audios_monitoreo_acustico_pasivo/')
+        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T3/audios_monitoreo_acustico_pasivo/')
 
 df_registros['path_audio'] = df_registros['path_audio'].str.replace(
         '/Volumes/Audiolib/tmp/anh_aguas_bajas_t3/',
-        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T2/audios_monitoreo_acustico_pasivo/')
+        'http://190.25.232.2:780/cgi-bin/Sonidos/Aguas bajas T3/audios_monitoreo_acustico_pasivo/')
 
 
 #%%
 registros = pd.DataFrame({
-('ID grabadora', 'eventID1'):  df_registros['sensor_name'],
+('ID grabadora', 'eventID1'):  df_registros['sensor_name']+'_T3',
 ('Nombre del archivo', 'eventID'):  df_registros['fname'],
 ('Unidad de muestreo', 'parentEventID'):  df_registros['eventID'],
 ('Sonido', 'type'):  'Sonido',
