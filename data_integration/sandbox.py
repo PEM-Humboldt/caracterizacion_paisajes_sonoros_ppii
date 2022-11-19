@@ -95,7 +95,7 @@ import statsmodels.api as sm
 import seaborn as sns
 df = pd.read_excel('/Users/jsulloa/Downloads/CovariablesPalma.xlsx')
 env = pd.read_csv('../aguas_altas_t1/env_data/ANH_to_GXX.csv')
-nmds = pd.read_csv('./dataframes/nmds.csv')
+nmds = pd.read_csv('./dataframes/nmds_data_t1_t2_t3_t4.csv')
 nmds = nmds.loc[nmds.temporada=='T1',:]
 df = df.merge(nmds, left_on='ID_MUES_PT', right_on='eventID')
 df = df.merge(env, on='eventID')
@@ -145,11 +145,12 @@ sns.scatterplot(x=edge.MDS1, y=edge.MDS2,
                 size=np.log1p(edge.dist_edge),
                 hue=np.log1p(edge.dist_edge), palette='crest')
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10,8))
 sns.scatterplot(y=edge.MDS1, x=edge.dist_edge_log)
-ax.set_xticks(np.arange(-7,8))
-xticklabels = np.concatenate([-np.exp(np.arange(0,7))+1, 
+ax.set_xticks(np.arange(-8,8))
+xticklabels = np.concatenate([-(np.exp(np.arange(0,8))+1)[::-1], 
                               np.exp(np.arange(0,8))+1]).astype(int)
 ax.set_xticklabels(xticklabels)
-ax.grid(visible=True)
+ax.vlines(0, -1, 1, linestyle=':', color='gray')
+ax.hlines(0, -8, 8, linestyle=':', color='gray')
 
